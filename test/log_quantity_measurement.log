@@ -1,0 +1,91 @@
+root | DEBUG | meter to centimeter: 2000
+root | DEBUG | meter to centimeter: 200
+root | DEBUG | meter to centimeter: 300
+root | DEBUG | meter to centimeter: 4500
+root | DEBUG | meter to centimeter: 3500
+root | ERROR | Exception due to wrong input type
+Traceback (most recent call last):
+  File "/Users/nusrat/PycharmProjects/PythonQuantityMeasurement/main/quantity_measurement_system.py", line 23, in convert_m_to_cm_length
+    centi_meter_length = round((input_length * self.M_TO_CM), 2)
+TypeError: type str doesn't define __round__ method
+root | DEBUG | meter to kilometer: 0.01
+root | DEBUG | meter to kilometer: 2.0
+root | DEBUG | meter to kilometer: 6.0
+root | DEBUG | meter to kilometer: 5.0
+root | ERROR | Exception due to wrong input type
+Traceback (most recent call last):
+  File "/Users/nusrat/PycharmProjects/PythonQuantityMeasurement/main/quantity_measurement_system.py", line 36, in convert_m_to_km_length
+    kilo_meter_length = round((input_length * self.M_TO_KM), 2)
+TypeError: can't multiply sequence by non-int of type 'float'
+root | DEBUG | gram to kilogram: 5.0
+root | DEBUG | gram to kilogram: 2.0
+root | DEBUG | gram to kilogram: 56.0
+root | DEBUG | gram to kilogram: 8.66
+root | ERROR | Exception due to wrong input type
+Traceback (most recent call last):
+  File "/Users/nusrat/PycharmProjects/PythonQuantityMeasurement/main/quantity_measurement_system.py", line 49, in convert_g_to_kg_weight
+    kilo_gram_weight = round((input_weight * self.G_TO_KG), 2 )
+TypeError: can't multiply sequence by non-int of type 'float'
+root | DEBUG | gram to milligram: 2000
+root | DEBUG | gram to milligram: 8000
+root | DEBUG | gram to milligram: 63000
+root | DEBUG | gram to milligram: 8963.0
+root | ERROR | Exception due to wrong input type
+Traceback (most recent call last):
+  File "/Users/nusrat/PycharmProjects/PythonQuantityMeasurement/main/quantity_measurement_system.py", line 63, in convert_g_to_mg_weight
+    milli_gram_weight = round((input_weight * self.G_TO_MG), 2 )
+TypeError: type str doesn't define __round__ method
+root | DEBUG | celsius to fahrenheit: 98.6
+root | DEBUG | celsius to fahrenheit: 118.4
+root | DEBUG | celsius to fahrenheit: 125.6
+root | DEBUG | celsius to fahrenheit: 57.2
+root | ERROR | Exception due to wrong input type
+Traceback (most recent call last):
+  File "/Users/nusrat/PycharmProjects/PythonQuantityMeasurement/main/quantity_measurement_system.py", line 76, in convert_celsius_to_fahrenheit_temperature
+    fahrenheit_temperature = round((((9 / 5) * input_temperature) + self.CF_TEMP_CONVERSION), 2 )
+TypeError: can't multiply sequence by non-int of type 'float'
+root | DEBUG | fahrenheit to celsius: 38.89
+root | DEBUG | fahrenheit to celsius: 475.0
+root | DEBUG | fahrenheit to celsius: 17.22
+root | DEBUG | fahrenheit to celsius: 62.78
+root | ERROR | Exception due to wrong input type
+Traceback (most recent call last):
+  File "/Users/nusrat/PycharmProjects/PythonQuantityMeasurement/main/quantity_measurement_system.py", line 90, in convert_fahrenheit_to_celsius_temperature
+    celsius_temperature = round(((input_temperature - self.CF_TEMP_CONVERSION) * (5 / 9)), 2)
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+root | DEBUG | celsius to kelvin: 279.15
+root | DEBUG | celsius to kelvin: 353.15
+root | DEBUG | celsius to kelvin: 336.15
+root | DEBUG | celsius to kelvin: 302.15
+root | ERROR | Exception due to wrong input type
+Traceback (most recent call last):
+  File "/Users/nusrat/PycharmProjects/PythonQuantityMeasurement/main/quantity_measurement_system.py", line 104, in convert_celsius_to_kelvin_temperature
+    kelvin_temperature = round((input_temperature + self.CK_TEMP_COVERSION), 2)
+TypeError: can only concatenate str (not "float") to str
+root | DEBUG | kelvin to celsius: 8.0
+root | DEBUG | kelvin to celsius: 5.0
+root | DEBUG | kelvin to celsius: 89.0
+root | DEBUG | kelvin to celsius: 24.0
+root | ERROR | Exception due to wrong input type
+Traceback (most recent call last):
+  File "/Users/nusrat/PycharmProjects/PythonQuantityMeasurement/main/quantity_measurement_system.py", line 118, in convert_kelvin_to_celsius_temperature
+    celsius_temperature = round((input_temperature - self.CK_TEMP_COVERSION), 2)
+TypeError: unsupported operand type(s) for -: 'str' and 'float'
+root | DEBUG | fahrenheit to kelvin: 261.48
+root | DEBUG | fahrenheit to kelvin: 308.71
+root | DEBUG | fahrenheit to kelvin: 297.04
+root | DEBUG | fahrenheit to kelvin: 274.82
+root | ERROR | Exception due to wrong input type
+Traceback (most recent call last):
+  File "/Users/nusrat/PycharmProjects/PythonQuantityMeasurement/main/quantity_measurement_system.py", line 132, in convert_fahrenheit_to_kelvin_temperature
+    kelvin_temperature = round(((input_temperature - self.CF_TEMP_CONVERSION) * (5 / 9)) + self.CK_TEMP_COVERSION, 2)
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+root | DEBUG | kelvin to fahrenheit: -306.67
+root | DEBUG | kelvin to fahrenheit: 287.33
+root | DEBUG | kelvin to fahrenheit: -295.87
+root | DEBUG | kelvin to fahrenheit: -74.47
+root | ERROR | Exception due to wrong input type
+Traceback (most recent call last):
+  File "/Users/nusrat/PycharmProjects/PythonQuantityMeasurement/main/quantity_measurement_system.py", line 146, in convert_kelvin_to_fahrenheit_temperature
+    fahrenheit_temperature = round(((input_temperature - self.CK_TEMP_COVERSION) * (9 / 5)) + self.CF_TEMP_CONVERSION, 2)
+TypeError: unsupported operand type(s) for -: 'str' and 'float'
